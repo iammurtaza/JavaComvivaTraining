@@ -1,0 +1,7 @@
+package com.comviva.day2;
+
+public class AnimalClient {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.comviva.day2;
+
+public class ThreadClient01 {
+	public static void main(String[] args) {
+		System.out.println("The main thread name is: " + Thread.currentThread().getName());
+		BusinessLogic bl = new BusinessLogic();
+		bl.start();
+		BusinessLogic b2 = new BusinessLogic();
+		b2.start();
+	}
+}

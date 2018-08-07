@@ -1,0 +1,7 @@
+package com.comviva.day2;
+
+public class EmployeeImpl {
+	 public static void main(String[] args) {
+		Employee e = new Employee(101, "Pooja", 21334)
+	}
+}

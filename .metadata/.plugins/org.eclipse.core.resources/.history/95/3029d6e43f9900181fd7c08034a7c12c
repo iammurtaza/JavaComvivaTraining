@@ -1,0 +1,10 @@
+package helloWorld;
+
+public class Account {
+	int accountNo;
+	String customerIncome;
+	double income;
+	public Account(){
+		super();
+	}	
+}

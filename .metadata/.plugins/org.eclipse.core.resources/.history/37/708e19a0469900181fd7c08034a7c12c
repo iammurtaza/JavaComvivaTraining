@@ -1,0 +1,13 @@
+package helloWorld;
+
+public class AccountClient {
+	public static void main(String args[]){
+		Account account;
+		account = new Account();
+		account.setAccountNo(101);
+		name = new Name(Tom);
+		account.setName(Tom);
+		account.setIncome(-4000);
+		account.display();
+	}
+}

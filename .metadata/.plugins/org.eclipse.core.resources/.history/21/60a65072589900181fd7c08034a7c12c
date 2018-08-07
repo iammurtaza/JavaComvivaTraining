@@ -1,0 +1,13 @@
+package helloWorld;
+
+public class Ford extends Car {
+
+	Ford(int fuelCapacity) {
+		super(fuelCapacity);
+		System.out.println("FUEL DEDE THAKUR");
+	}
+
+	public void musicPlayer(){
+		System.out.println("BOOM BOOM BOOM");
+	}
+}

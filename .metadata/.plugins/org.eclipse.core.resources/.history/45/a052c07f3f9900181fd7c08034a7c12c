@@ -1,0 +1,8 @@
+package helloWorld;
+
+public class AccountClient {
+	public static void main(String args[]){
+		Account account;
+		account = new Account();
+	}
+}

@@ -1,0 +1,11 @@
+package com.comviva.day2;
+
+public class ShoppingClient {
+	public static void main(String[] args) {
+		ShoppingLogic a1 = new ShoppingLogic("Dilbar", 6);
+		ShoppingLogic a2 = new ShoppingLogic("Billu", 4);
+		ShoppingLogic a3 = new ShoppingLogic("Santa", 7);
+		
+		
+	}
+}

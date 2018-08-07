@@ -1,0 +1,14 @@
+package helloWorld;
+
+public class CarClient {
+	public static void main(String[] args) {
+		Ford figo = new Ford(50);
+		figo.color();
+		figo.musicPlayer();
+		
+		Maruti swift = new Maruti(99, true);
+		swift.carWheels();
+		System.out.println("SWIFT KA MILEAGE " + swift.getFuelCapacity());
+	
+	}
+}

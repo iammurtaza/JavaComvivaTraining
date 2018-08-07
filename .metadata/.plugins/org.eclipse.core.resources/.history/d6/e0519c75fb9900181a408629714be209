@@ -1,0 +1,5 @@
+package com.comviva.day2;
+
+public interface IAnimal {
+
+}

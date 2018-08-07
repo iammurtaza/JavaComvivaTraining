@@ -1,0 +1,19 @@
+package helloWorld;
+
+public class Maruti extends Car{
+	boolean isAbs;
+	
+	public boolean isAbs() {
+		return isAbs;
+	}
+
+	Maruti(int fuelCapacity, boolean isAbs){
+		super(fuelCapacity);
+		this.isAbs = isAbs;
+		System.out.println("MARUTI CHALEGI?");
+	}
+	
+	public void carWheels(){
+		System.out.println("DAAAAAAAAAAAMN!");
+	}
+}

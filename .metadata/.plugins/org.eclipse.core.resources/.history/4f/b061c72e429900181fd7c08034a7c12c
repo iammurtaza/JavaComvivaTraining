@@ -1,0 +1,14 @@
+package helloWorld;
+
+public class Account {
+	int accountNo;
+	String customerIncome;
+	double income;
+	protected int x=4;
+	public Account(){
+		super();
+	}
+	void display(){
+		System.out.println(accountNo + " \n" + customerIncome + " \n" + income);
+	}
+}

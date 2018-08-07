@@ -1,0 +1,7 @@
+package com.comviva.day2;
+
+public class AnimalBL {
+	public void display(IAnimal animal){
+		
+	}
+}

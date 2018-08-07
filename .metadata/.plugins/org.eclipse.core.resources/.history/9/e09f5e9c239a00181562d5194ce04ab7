@@ -1,0 +1,18 @@
+package com.comviva.day2;
+
+public class ShoppingClient {
+	public static void main(String[] args) {
+//		ShoppingLogic a1 = new ShoppingLogic("Dilbar", 6);
+//		ShoppingLogic a2 = new ShoppingLogic("Billu", 4);
+//		ShoppingLogic a3 = new ShoppingLogic("Santa", 7);
+
+		
+		Thread t1 = new Thread(new ShoppingLogic(), "Vishal");
+		t1.setPriority(8);
+		t1.start();
+		
+		Thread t2 = new Thread(new ShoppingLogic(), "Abacab");
+		t2.setPriority(5);
+		t2.start();
+	}
+}

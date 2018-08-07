@@ -1,0 +1,44 @@
+package helloWorld;
+
+public class Account {
+	private int accountNo;
+	private String customerIncome;
+	private double income;
+	protected int x=4;
+	public Account(){
+		super();
+	}
+	public int getAccountNo() {
+		return accountNo;
+	}
+	public void setAccountNo(int accountNo) {
+		this.accountNo = accountNo;
+	}
+	public String getCustomerIncome() {
+		return customerIncome;
+	}
+	public void setCustomerIncome(String customerIncome) {
+		if(customerIncome.length()<4){
+			System.out.println("Too small name, man!");
+			this.customerIncome="NO NAME"
+		}
+		else{
+			this.customerIncome = customerIncome;
+		}
+	}
+	public double getIncome() {
+		return income;
+	}
+	public void setIncome(double income) {
+		if(income<0){
+			System.out.println("Looks like you are a comvivian!");
+			this.income =1;
+		}
+		else{
+			this.income = income;
+		}
+	}
+	void display(){
+		System.out.println(accountNo + " \n" + customerIncome + " \n" + income);
+	}
+}

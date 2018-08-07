@@ -1,0 +1,10 @@
+package helloWorld;
+
+public class Maruti extends Car{
+	boolean isAbs;
+	
+	Maruti(int fuelCapacity, boolean isAbs){
+		super(fuelCapacity);
+		this.isAbs = isAbs;
+	}
+}

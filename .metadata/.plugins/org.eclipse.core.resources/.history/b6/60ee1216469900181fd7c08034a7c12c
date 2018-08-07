@@ -1,0 +1,6 @@
+package helloWorld;
+
+public class name {
+	private String fName;
+	private String lName;
+}

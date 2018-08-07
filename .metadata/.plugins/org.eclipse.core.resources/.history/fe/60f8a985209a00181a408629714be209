@@ -1,0 +1,23 @@
+package com.comviva.day2;
+
+class Rules {}
+
+public class ShoppingLogic extends Rules implements Runnable{
+	private String name;
+	private int priority;
+	private Thread thread;
+	
+	public ShoppingLogic(String name, int priority) {
+		this.name = name;
+		this.priority = priority;
+		thread = new Thread(this);
+		thread.setPriority(priority);
+		thread.start();
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}

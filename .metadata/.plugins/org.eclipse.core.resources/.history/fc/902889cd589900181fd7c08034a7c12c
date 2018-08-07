@@ -1,0 +1,7 @@
+package helloWorld;
+
+public class CarClient {
+	public static void main(String[] args) {
+		Ford figo = new Ford(50);
+	}
+}
