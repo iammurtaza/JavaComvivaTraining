@@ -1,9 +1,0 @@
-package com.comviva.day2;
-
-public class ThreadClient01 {
-	public static void main(String[] args) {
-		BusinessLogic bl = new BusinessLogic();
-		bl.start();
-		b1.run();
-	}
-}

@@ -1,7 +1,0 @@
-package com.comviva.day2;
-
-class Rules {}
-
-public class ShoppingLogic extends Rules{
-
-}

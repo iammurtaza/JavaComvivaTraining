@@ -1,7 +1,0 @@
-package com.comviva.day2;
-
-public class Employee {
-	private int empId;
-	private String empName;
-	private double income;
-}

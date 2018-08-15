@@ -1,0 +1,81 @@
+package assingment;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
+
+public class dict {
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader br1 = new BufferedReader(
+				new FileReader("dictionary.txt"));
+		String line;
+
+		HashMap<String, HashSet<String>> map = new HashMap<String, HashSet<String>>();
+
+		while ((line = br1.readLine()) != null) {
+			HashSet<String> set = new HashSet<String>();
+			String arr[] = line.split(":", 2);
+			String arr2[] = arr[1].split(",");
+			for (int i = 0; i < arr2.length; i++) {
+				set.add(arr2[i]);
+			}
+			map.put(arr[0], set);
+		}
+		br1.close();
+		
+		int flag2 = 1;
+		while (flag2==1) {
+			BufferedReader br = new BufferedReader(new InputStreamReader(
+					System.in));
+			System.out
+					.println("What word you want to know synonym of: (write iquit to exit)");
+			String query = br.readLine();
+			if (!query.equals("iquit")) {
+				if (map.get(query) == null) {
+					System.out.println("Do you want to add this word");
+					String response = br.readLine();
+					if (response.equals("yes")) {
+						System.out.println("Word: " + query + " has been added");
+						int flag = 1;
+						HashSet<String> set2 = new HashSet<String>();
+						while (flag == 1) {
+							System.out
+									.println("Write synonyms(write !wq to stop)");
+							String synonym = br.readLine();
+							set2.add(synonym);
+							if (synonym.equals("!wq")) {
+								flag = 0;
+							}
+						}
+						File file = new File("dictionary.txt");
+						FileWriter fw = new FileWriter(file, true);
+						BufferedWriter bw = new BufferedWriter(fw);
+
+						bw.write(query + ":");
+						for (String temp : set2) {
+							bw.write(temp);
+						}
+						bw.newLine();
+						bw.close();
+					}
+				} else {
+					System.out.println(map.get(query));
+				}
+			}
+			else{
+				flag2=0;
+			}
+		}
+	}
+}

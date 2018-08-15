@@ -1,7 +1,0 @@
-package com.comviva.day2;
-
-public class Eyes {
-	public void eyeColor(){
-		System.out.println("YEH KAALI AANKHE, TOOO ROO TOO ROO");
-	}
-}

@@ -1,0 +1,31 @@
+package com.comviva.day3;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class ObjectStoreAndRetrieve {
+	private static void storeDevice(Devices device) throws IOException {
+		File file = new File("devices.ser");
+		FileOutputStream fos = new FileOutputStream(file);
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+		oos.writeObject(device);
+		System.out.println("Object stored");
+
+		oos.close();
+	}
+
+	private static Devices getDevice() {
+		return null;
+	}
+
+	public static void main(String[] args) {
+		try {
+			storeDevice(new Devices(101, "Monitor", 4000));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package com.comviva.day3;
+
+import java.util.TreeSet;
+
+import com.comviva.day4.Employee;
+
+public class SetEx02 {
+	public static void main(String[] args) {
+		TreeSet<Employee> set = new TreeSet<>();
+		set.add(new Employee("Hello",20312.1));
+		//System.out.println(set);
+	}
+}

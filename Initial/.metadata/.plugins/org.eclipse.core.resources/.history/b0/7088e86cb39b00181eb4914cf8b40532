@@ -1,0 +1,15 @@
+package com.comviva.day3;
+
+public class ObjectStoreAndRetrieve {
+	private void storeDevice(Devices device){
+	
+	}
+	
+	private Devices getDevice() {
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

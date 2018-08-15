@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/mhz/Downloads/Java/Dynamic/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+330548042.index
+3109310093.index
+3066778019.index
+108313223.index
+3970541182.index
+3073899043.index

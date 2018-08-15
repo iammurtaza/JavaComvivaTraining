@@ -1,0 +1,7 @@
+package com.comviva.testing;
+
+public class SomeLogic {
+	public boolean sayHi(){
+		return true;
+	}
+}

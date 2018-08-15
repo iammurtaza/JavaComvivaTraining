@@ -1,0 +1,14 @@
+package com.training.client;
+
+import com.training.bean.Employee;
+import com.training.dao.EmployeeDAO;
+import com.training.interfaces.IEmployeeDAO;
+
+public class EmployeeClient {
+	public static void main(String[] args) {
+		IEmployeeDAO dao = new EmployeeDAO();
+		Employee employee = new Employee(222, "Harsha", 4433);
+		boolean flag = dao.insertEmployee(employee);
+		System.out.println(flag ? "Inserted" : "Not Inserted");
+	}
+}

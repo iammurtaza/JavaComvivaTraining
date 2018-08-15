@@ -1,7 +1,0 @@
-package helloWorld;
-
-public class Maruti extends Car{
-	Maruti(){
-		super();
-	}
-}

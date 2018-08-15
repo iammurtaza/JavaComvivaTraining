@@ -1,0 +1,32 @@
+package com.comviva.day3;
+
+import java.io.IOException;
+
+public class Ex02 {
+	public static void checkIncomeTax(int salary, int taxAmount, String name) throws IOException{
+		if(salary< 10000){
+			throw new RuntimeException("No tax for you " + name);
+		}
+		else {
+			if(taxAmount>=10000 && taxAmount<20000){
+				throw new IOException("Good to go "+ name +
+						", better to have an accountant");
+			}
+			else {
+				System.out.println("Pay using official site " + name);
+			}
+		}
+		}
+	}
+
+	public static void main(String[] args) {
+		try{
+			checkIncomeTax(1000, 200, "Jenkins");
+		} catch (IOException e){
+			e.printStackTrace();
+		} catch (RuntimeException re) {
+			re.printStackTrace();
+		}
+			System.out.println("----------------------------");
+	}
+}

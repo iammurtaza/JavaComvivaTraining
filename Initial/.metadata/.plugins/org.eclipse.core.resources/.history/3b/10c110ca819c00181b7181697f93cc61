@@ -1,0 +1,14 @@
+package com.comviva.testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SomeLogicTest {
+
+	@Test
+	public void hitest() {
+		SomeLogic logic = new SomeLogic();
+	}
+
+}

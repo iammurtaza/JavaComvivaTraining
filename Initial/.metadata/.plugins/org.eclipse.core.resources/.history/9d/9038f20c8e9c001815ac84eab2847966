@@ -1,0 +1,10 @@
+package com.comviva.day4;
+
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class Dictionary {
+	HashMap<String, HashSet<String>> dict = new HashMap<>();
+	
+	
+}

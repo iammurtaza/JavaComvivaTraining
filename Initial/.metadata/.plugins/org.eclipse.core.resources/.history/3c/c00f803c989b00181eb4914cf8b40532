@@ -1,0 +1,22 @@
+package com.comviva.day3;
+
+public class Ex02 {
+	public static void checkIncomeTax(int salary, int taxAmount, String name) {
+		if(salary< 10000){
+			throw new RuntimeException("No tax for you" + name);
+		}
+		else {
+			if(taxAmount>=10000 && taxAmount<20000){
+				throw new ArithmeticException("Good to go "+ name +
+						", better to have an accountant");
+			}
+			else {
+				System.out.println("Pay using official site " + name);
+			}
+		}
+	}
+	public static void main(String[] args) {
+		checkIncomeTax(1000, 200, "Jenkins");
+		
+	}
+}

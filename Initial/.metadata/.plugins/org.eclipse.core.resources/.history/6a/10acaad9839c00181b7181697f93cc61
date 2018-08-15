@@ -1,0 +1,20 @@
+package com.comviva.testing;
+
+public class SomeLogic {
+	public boolean sayHi() {
+		return true;
+	}
+
+	public String sayHi(String name) {
+		return "Hello " + name;
+	}
+
+	public String sayHello(String name) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return "Hello " + name;
+	}
+}

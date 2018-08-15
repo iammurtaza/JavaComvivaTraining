@@ -1,5 +1,0 @@
-package helloWorld;
-
-public class Shape {
-	public void araa();
-}

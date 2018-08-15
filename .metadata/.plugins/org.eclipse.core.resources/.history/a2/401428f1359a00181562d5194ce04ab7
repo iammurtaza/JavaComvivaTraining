@@ -1,6 +1,0 @@
-package com.comviva.day2;
-
-public class LampClient {
-	Lamp[] l = new Lamp[3];
-	
-}

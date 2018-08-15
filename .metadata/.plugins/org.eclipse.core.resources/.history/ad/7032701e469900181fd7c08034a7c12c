@@ -1,6 +1,0 @@
-package helloWorld;
-
-public class name {
-	private String firstName;
-	private String lastName;
-}

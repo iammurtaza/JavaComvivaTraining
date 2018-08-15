@@ -1,0 +1,13 @@
+package com.comviva.day3;
+
+public class Employee {
+	private int empId;
+	private String empName;
+	private double income;
+	static int counter=100;
+	public Employee(String empName, double income) {
+		this.empId = counter++;
+		this.empName = empName;
+		this.income = income;
+	}
+}
