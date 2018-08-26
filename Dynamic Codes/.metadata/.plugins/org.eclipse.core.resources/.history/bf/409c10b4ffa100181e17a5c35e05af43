@@ -1,0 +1,10 @@
+package com.comviva;
+
+public class LoginDAO implements ILoginDAO {
+	@Override
+	public boolean checkRecord() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

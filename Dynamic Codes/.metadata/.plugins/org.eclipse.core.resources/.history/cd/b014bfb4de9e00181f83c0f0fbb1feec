@@ -1,0 +1,7 @@
+package com.comviva.autowire;
+
+public class Monitor {
+	private int screenWidth;
+	private String companyName;
+	private String type;
+}

@@ -1,0 +1,13 @@
+package com.comviva;
+
+import java.util.List;
+
+public class LoginBusinessLogic2 {
+	static List<LoginBean> list = null;
+
+	public List<LoginBean> insertLoginDetails(LoginBean logicBean){
+		System.out.println("The data is inserted and added to list");
+		list.add(logicBean);
+		return list;
+	}
+}

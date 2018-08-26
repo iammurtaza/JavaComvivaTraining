@@ -1,0 +1,10 @@
+Write a java(POJO) application which reads from a file (file.txt). The file has the contents in the format given below and the same to be inserted in the database. There should be a unique thread for each department which processes entries from that department.
+
+Assume that the table name is 'Employees' and the database name is 'development'. Create the table if it does not exist.
+
+empid	empname	deptname
+101	kumar	finance
+102	harry	finance
+103	peter	accounts
+104	jimmy	accounts
+Note: Two threads should be there : 1 thread for finance and other for accounts. Assume that finance and accounts would be the only departments.

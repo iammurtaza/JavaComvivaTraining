@@ -1,0 +1,11 @@
+Write a MVC architecture program(Using JSP/Servlet/DAO) to insert a record for the below table
+
+Employee 
+empid 
+empname
+empsal
+empemail
+
+Where the details of the employee are to be taken from .html form.
+
+In other words, write a MVC application which gives users a html form to fillout empid, empname, empsal and empemail and creates an entry in the above mentioned table on submit.

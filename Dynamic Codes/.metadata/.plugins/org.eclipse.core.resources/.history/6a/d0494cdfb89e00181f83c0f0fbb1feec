@@ -1,0 +1,12 @@
+package com.comviva;
+
+public class LoginBusinessLogic {
+	
+	public LoginBean insertLoginDetails(LoginBean loginBean){
+		
+		
+		System.out.println("Assume the data is inserted");
+		return loginBean;
+	}
+
+}

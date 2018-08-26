@@ -1,0 +1,8 @@
+package com.comviva.autowire;
+
+public class Keyboard {
+	private int noOfKeys;
+	private String keyBoardType;
+	private int year;
+	
+}

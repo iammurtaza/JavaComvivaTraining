@@ -1,5 +1,0 @@
-INDEX VERSION 1.131+/home/mhz/Downloads/Java/java/.metadata/.plugins/org.eclipse.jdt.core
-646308851.index
-2772675874.index
-1441286467.index
-2697597666.index

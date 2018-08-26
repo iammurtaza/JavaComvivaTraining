@@ -1,7 +1,0 @@
-package com.comviva.autowire;
-
-public class Computer {
-	private Keyboard keyboard;
-	private Monitor monitor;
-	private Processor processor;
-}

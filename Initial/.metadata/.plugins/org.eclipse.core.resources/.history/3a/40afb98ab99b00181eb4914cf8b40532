@@ -1,9 +1,0 @@
-package com.comviva.day3;
-
-import java.util.ArrayList;
-
-public class ArrayListEx01 {
-	public static void main(String[] args) {
-		ArrayList list = new ArrayList(); 
-	}
-}

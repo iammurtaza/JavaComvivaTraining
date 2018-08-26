@@ -1,0 +1,15 @@
+package com.comviva;
+
+import org.springframework.bean.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+
+public class ServiceClient {
+	public static void main(String[] args) {
+		XmlBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource(
+				"context.xml"));
+
+		IService service = (IService) beanFactory.getBean("hello");
+
+		System.out.println(service.sayHello());
+	}
+}

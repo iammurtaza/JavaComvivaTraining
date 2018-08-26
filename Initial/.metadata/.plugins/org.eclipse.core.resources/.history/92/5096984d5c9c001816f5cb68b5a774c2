@@ -1,5 +1,0 @@
-package com.comviva.day4;
-
-public class Dictionary {
-	HashMap<String, HashSet<String>> dict = new HashMap<>();
-}

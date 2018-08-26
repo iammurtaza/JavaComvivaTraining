@@ -1,0 +1,33 @@
+package com.comviva;
+
+import java.sql.SQLException;
+
+public class LoginDAO implements ILoginDAO {
+	@Override
+	public boolean checkRecord() {
+		String sql = "select empid, empname, empsal from employee";
+		List<Table> list = new ArrayList<>();
+		GetConnection gc = new GetConnection();
+
+		try {
+			gc.ps = GetConnection.getMysqlCon().prepareStatement(sql);
+			gc.rs = gc.ps.executeQuery();
+
+			while (gc.rs.next()) {
+				Employee temp = new Employee();
+
+				temp.setEmpId(gc.rs.getInt(1));
+				temp.setEmpName(gc.rs.getString(2));
+				temp.setEmpSal(gc.rs.getDouble(3));
+
+				list.add(temp);
+			}
+			return list;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+}

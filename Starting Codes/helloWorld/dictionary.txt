@@ -1,0 +1,5 @@
+hello:bonjour,hola,ciao,namaste
+bye:adios,aloha,ciao,sayonara
+love:amor,mohabbat,liebe
+hate:hateful,fire,anger
+sad:damnsad,reallysad,toodamnsad

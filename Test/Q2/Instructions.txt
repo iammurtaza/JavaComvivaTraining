@@ -1,0 +1,6 @@
+The database's name is comdb1 and the table name is employee
+
+The following is a valid sql query for the above mentioned database:
+
+use comdb1;
+select * from employee;

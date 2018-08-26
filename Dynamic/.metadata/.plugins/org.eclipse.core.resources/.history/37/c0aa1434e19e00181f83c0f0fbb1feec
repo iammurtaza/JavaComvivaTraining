@@ -1,9 +1,0 @@
-package com.comviva.autowire;
-
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-public class Client {
-	public static void main(String[] args) {
-		applicationContext context = new ClassPathXmlApplicationContext();
-	}
-}

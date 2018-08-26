@@ -1,0 +1,42 @@
+package com.comviva;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class LoginValidator extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		
+		String userName = request.getParameter("uname");
+		String password = request.getParameter("pass");
+		// check on a sql table if these values exist
+		ILoginDAO dao = new LoginDAO();
+		List<Table> list = dao.checkRecord();
+
+		for (Employee temp : list) {
+			System.out.println(temp.getEmpId());
+			System.out.println(temp.getEmpName());
+			System.out.println(temp.getEmpSal());
+			System.out.println("-----------------");
+		}
+		
+		if (userName.equals("ami") && password.equals("ima")) {
+			request.getRequestDispatcher("Success").forward(request, response);
+			
+		}
+		//not exist
+		else {
+			request.getRequestDispatcher("Failure").include(request, response);
+			request.getRequestDispatcher("LoginForm.html").include(request,
+					response);
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.comviva.autowire;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Client {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"context_comp", "context_key", "context_moni", "context_pro");
+
+		Computer computer = context.getBean("computer", Computer.class);
+		
+		System.out.println(computer.getMonitor());
+	}
+}

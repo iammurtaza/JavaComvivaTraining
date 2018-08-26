@@ -1,8 +1,0 @@
-package com.comviva;
-
-public class ServiceClient {
-	public static void main(String[] args) {
-		
-		IService service = new HelloService();
-	}
-}

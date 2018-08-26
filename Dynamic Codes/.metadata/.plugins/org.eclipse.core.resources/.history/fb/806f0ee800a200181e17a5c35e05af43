@@ -1,0 +1,25 @@
+package com.comviva;
+
+import java.sql.SQLException;
+
+public class LoginDAO implements ILoginDAO {
+	@Override
+	public boolean checkRecord() {
+		String sql = "update employee set empsal=? where empid=?";
+		GetConnection gc = new GetConnection();
+
+		try {
+			gc.ps = GetConnection.getMysqlCon().prepareStatement(sql);
+
+			gc.ps.setDouble(1, newSalary);
+			gc.ps.setInt(2, empId);
+			return gc.ps.executeUpdate() > 0;
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return false;
+	}
+
+}

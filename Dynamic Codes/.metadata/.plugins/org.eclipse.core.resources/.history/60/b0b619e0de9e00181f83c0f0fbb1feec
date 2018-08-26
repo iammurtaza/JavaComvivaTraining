@@ -1,0 +1,7 @@
+package com.comviva.autowire;
+
+public class Processor {
+	private int frequency;
+	private String series;
+	private String company;
+}
